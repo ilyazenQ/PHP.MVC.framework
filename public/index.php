@@ -14,14 +14,15 @@ $router = new App\Router();
    //);
 
  //);
- var_dump($_SERVER['REQUEST_URI']);
+ //var_dump($_SERVER['REQUEST_URI']);
 $router 
--> register('/' ,[App\Classes\Home::class,'index'])
+-> get('/' ,[App\Classes\Home::class,'index'])
 // [App\Classes\Home::class,'index'] это $action в функции $router->resolve (return call_user_func($action));
--> register('/show' ,[App\Classes\Home::class,'show'])
--> register('/invoices' ,[App\Classes\Invoice::class,'index'])
+-> get('/show' ,[App\Classes\Home::class,'show'])
+-> get('/invoices' ,[App\Classes\Invoice::class,'index'])
 // так как router->register возвр self, можно делать цепочку вызовов
--> register('/invoices/create' ,[App\Classes\Invoice::class,'create']);
+-> get('/invoices/create' ,[App\Classes\Invoice::class,'create'])
+-> post('/invoices/create' ,[App\Classes\Invoice::class,'store']);
 
 
-echo $router->resolve($_SERVER['REQUEST_URI']);
+echo $router->resolve($_SERVER['REQUEST_URI'],strtolower($_SERVER['REQUEST_METHOD']));

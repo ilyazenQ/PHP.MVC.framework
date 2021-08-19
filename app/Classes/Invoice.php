@@ -9,7 +9,15 @@ public function index():string {
 
 }
 public function create():string  {
-   return 'InvoicePageCreate';
+   return '
+   <form action="/invoices/create" method="post">
+  <label for="test">Test:</label>
+  <input type="text" name="test">
+  </form>';
+}
+public function store() {
+   $amount = $_POST['test'];
+   var_dump($amount);
 }
 
 }
