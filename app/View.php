@@ -13,18 +13,28 @@ class View
     {
     }
 
-    public function render()
+    public function render(bool $includeLayout)
     {
         $viewPath = VIEW_PATH . '/' . $this->view . '.php';
+        $layout = LAYOUT_VIEW_PATH;
+        $content = $viewPath;
 
         if(!file_exists($viewPath)) {
             throw new ViewNotFoundException();
         }
-        ob_start();
+        if ($includeLayout) {
+            ob_start();
 
-        include $viewPath;
+            include $layout;
 
-        return (string) ob_get_clean();
+            return (string)ob_get_clean();
+        } else {
+            ob_start();
+
+            include $content;
+
+            return (string)ob_get_clean();
+        }
     }
     public static function  make(string $view, array $params = []) {
 
