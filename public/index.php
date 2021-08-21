@@ -1,4 +1,6 @@
 <?php
+
+use App\Config;
 use App\Router;
 use App\Controllers;
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -9,9 +11,8 @@ $dotenv->load();
 const VIEW_PATH = __DIR__ . '/../views';
 const LAYOUT_VIEW_PATH = __DIR__ . '/../views' . '/layout.php';
 
-try {
-    $router = new App\Router();
 
+    $router = new App\Router();
 //$router -> register('/' ,
 
 //function () {
@@ -32,8 +33,12 @@ try {
         ->post('/invoices/create', [App\Controllers\InvoiceController::class, 'store']);
 
 
-    echo $router->resolve($_SERVER['REQUEST_URI'], strtolower($_SERVER['REQUEST_METHOD']));
-} catch (\App\Exceptions\RouteNotFoundException) {
-    http_response_code(404);
-    echo \App\View::make('error/404')->render();
-}
+
+(new App\App($router,
+[
+    'uri'=>$_SERVER['REQUEST_URI'],
+    'method'=>$_SERVER['REQUEST_METHOD'],
+],
+    new Config($_ENV)
+
+))->run();
