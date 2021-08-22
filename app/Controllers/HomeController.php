@@ -8,9 +8,9 @@ use PDO;
 class HomeController {
 
 public function index():string {
-
+    //$x = ['z'=>321];
     $orders = new Order();
-    var_dump($orders->orders());
+    //var_dump($orders->orders());
     //$db1 = App::db();
    // var_dump($db===$db1);
   //  $query = 'SELECT * FROM orders LIMIT 2';
@@ -18,7 +18,11 @@ public function index():string {
     //var_dump($stmt->fetchAll());
 
     return View::make('index',
-       ['foo' => 'bar']
+       [
+           'orders' => $orders->getAllOrders(),
+           //'x'=>$x['z']
+
+       ]
 
    )->render(true);
 
@@ -27,6 +31,25 @@ public function index():string {
 public function show():string {
 
     return View::make('show')->render(true);
+
+}
+
+public function search() {
+
+     if(isset($_POST['search_sub'])) {
+
+         $productName = $_POST['s'];
+         $orders = new Order();
+         $search = $orders->getSearchOrders($productName);
+        //var_dump($search === []);
+         return View::make('search',
+             [
+                 'orders' => $search ,
+                 //'x'=>$x['z']
+
+             ]
+         )->render(true);;
+     }
 
 }
 

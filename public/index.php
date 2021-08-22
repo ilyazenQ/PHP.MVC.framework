@@ -27,9 +27,11 @@ const LAYOUT_VIEW_PATH = __DIR__ . '/../views' . '/layout.php';
         ->get('/', [App\Controllers\HomeController::class, 'index'])
 // [App\Classes\HomeController::class,'index'] это $action в функции $router->resolve (return call_user_func($action));
         ->get('/show', [App\Controllers\HomeController::class, 'show'])
+        ->post('/search', [App\Controllers\HomeController::class, 'search'])
         ->get('/invoices', [App\Controllers\InvoiceController::class, 'index'])
 // так как router->register возвр self, можно делать цепочку вызовов
         ->get('/invoices/create', [App\Controllers\InvoiceController::class, 'create'])
+
         ->post('/invoices/create', [App\Controllers\InvoiceController::class, 'store']);
 
 
