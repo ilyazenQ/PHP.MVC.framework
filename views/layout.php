@@ -45,7 +45,7 @@
                     <a class="nav-link active" aria-current="page" href="/">Заказы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link active" aria-current="page" href="/phrase">Фразы</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

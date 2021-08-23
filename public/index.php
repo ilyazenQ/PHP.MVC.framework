@@ -26,13 +26,16 @@ const LAYOUT_VIEW_PATH = __DIR__ . '/../views' . '/layout.php';
     $router
         ->get('/', [App\Controllers\HomeController::class, 'index'])
 // [App\Classes\HomeController::class,'index'] это $action в функции $router->resolve (return call_user_func($action));
-        ->get('/show', [App\Controllers\HomeController::class, 'show'])
+       // ->get('/show', [App\Controllers\HomeController::class, 'show'])
         ->post('/search', [App\Controllers\HomeController::class, 'search'])
-        ->get('/invoices', [App\Controllers\InvoiceController::class, 'index'])
+       // ->get('/invoices', [App\Controllers\InvoiceController::class, 'index'])
 // так как router->register возвр self, можно делать цепочку вызовов
-        ->get('/invoices/create', [App\Controllers\InvoiceController::class, 'create'])
-
-        ->post('/invoices/create', [App\Controllers\InvoiceController::class, 'store']);
+        //->get('/invoices/create', [App\Controllers\InvoiceController::class, 'create'])
+        //->post('/invoices/create', [App\Controllers\InvoiceController::class, 'store'])
+        ->get('/phrase', [App\Controllers\PhraseController::class, 'index'])
+        ->get('/phrase/create', [App\Controllers\PhraseController::class, 'create'])
+        ->post('/phrase/store', [App\Controllers\PhraseController::class, 'store'])
+    ;
 
 
 
