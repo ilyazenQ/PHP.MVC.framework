@@ -7,7 +7,7 @@ There are a few page:
 The first page  displays orders from northwind db:
 ![plot](https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/1.PNG)
 ![plot](https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/1.PNG)
-
+<img src="https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/1.PNG">
 <h2>Instructions</h2>
 1)Clone this repository to your local or download it. <br>
 2)Please note that PHP 8 is required, use composer update in your directory <br>
