@@ -4,10 +4,12 @@ This project is implement MVC fraemwork use OOP as well as database to store and
 The basic skeleton of fraemwork code i had provide in Basic-MVC branch.
 The current branch have example project to use fraemwork. 
 There are a few page:
-The first page  displays orders from northwind db:
-![plot](https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/1.PNG)
-![plot](https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/1.PNG)
+The first page  displays orders from northwind db, and provide to search any orders:
 <img src="https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/1.PNG">
+The second page displays most popular phrases used by managers:
+<img src="https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/2.PNG">
+And provide to insert a new phrase:
+<img src="https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/3.PNG">
 <h2>Instructions</h2>
 1)Clone this repository to your local or download it. <br>
 2)Please note that PHP 8 is required, use composer update in your directory <br>
