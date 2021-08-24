@@ -5,8 +5,7 @@ The basic skeleton of fraemwork code i had provide in Basic-MVC branch.
 The current branch have example project to use fraemwork. 
 There are a few page:
 The first page  displays orders from northwind db:
-![image](https://user-images.githubusercontent.com/89118780/130554452-b33b23b9-73c3-409d-b714-f87554d001f7.png)
-
+![Image alt](https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/1.PNG)
 
 <h2>Instructions</h2>
 1)Clone this repository to your local or download it. <br>
