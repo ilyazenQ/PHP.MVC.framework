@@ -6,6 +6,7 @@ The current branch have example project to use fraemwork.
 There are a few page:
 The first page  displays orders from northwind db:
 ![Image alt](https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/1.PNG)
+![alt tag](https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/1.PNG)
 
 <h2>Instructions</h2>
 1)Clone this repository to your local or download it. <br>
