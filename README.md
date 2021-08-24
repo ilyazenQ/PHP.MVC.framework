@@ -1,8 +1,8 @@
 # PHP.MVC.framework
 <h2>Summary</h2>
-This project is implement MVC fraemwork use OOP as well as database to store and get the data.
-The basic skeleton of fraemwork code i had provide in Basic-MVC branch.
-The current branch have example project to use fraemwork. 
+This project is implement MVC fraemwork use OOP as well as database to store and get the data.<br>
+The basic skeleton of fraemwork code i had provide in Basic-MVC branch.<br>
+The current branch have example project to use fraemwork. <br>
 There are a few page:
 The first page  displays orders from northwind db, and provide to search any orders:
 <img src="https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/1.PNG">
