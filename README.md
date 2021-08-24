@@ -1,4 +1,13 @@
 # PHP.MVC.framework
+<h2>Summary</h2>
+This project is implement MVC fraemwork use OOP as well as database to store and get the data.
+The basic skeleton of fraemwork code i had provide in Basic-MVC branch.
+The current branch have example project to use fraemwork. 
+There are a few page:
+The first page  displays orders from northwind db:
+![image](https://user-images.githubusercontent.com/89118780/130554452-b33b23b9-73c3-409d-b714-f87554d001f7.png)
+
+
 <h2>Instructions</h2>
 1)Clone this repository to your local or download it. <br>
 2)Please note that PHP 8 is required, use composer update in your directory <br>
