@@ -10,6 +10,7 @@ The second page displays most popular phrases used by managers:
 <img src="https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/2.PNG">
 And provide to insert a new phrase:
 <img src="https://github.com/ilyazenQ/PHP.MVC.framework/blob/main/gitpictures/3.PNG">
+<hr>
 <h2>Instructions</h2>
 1)Clone this repository to your local or download it. <br>
 2)Please note that PHP 8 is required, use composer update in your directory <br>
